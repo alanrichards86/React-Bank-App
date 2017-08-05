@@ -1,0 +1,14 @@
+.nav-p {
+  margin-right: 10px;
+  color: #4c8c4a;
+  font-size: 1.5em;
+  margin:auto;
+  margin-right: 10px;
+}
+.navLink {
+  text-decoration: none;
+  color: black;
+}
+.navLink:hover {
+  color: lightblue;
+}

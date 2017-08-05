@@ -12,7 +12,7 @@ class App extends Component {
 
         <div className="main">
           <div className= "jumbotron">
-            <h1 className= "display-3">BankShot</h1>
+            <h1 className= "display-3 main-h1">BankShot</h1>
             <p className= "lead">Your world wide banking leader.</p>
             <hr className= "my-4"/>
             <p>Quick, fast, and sometimes accurate account results.</p>
