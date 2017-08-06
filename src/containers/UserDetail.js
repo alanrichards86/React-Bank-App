@@ -62,6 +62,23 @@ function mapStateToProps(state) {
   };
 }
 
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({
+        selectAccount: selectAccount
+    }, dispatch)
+}
+
+
+
+
+export default connect(mapStateToProps)(UserDetail);
+
+
+
+
+
+
+//  -------- No Longer Need Comments --------
 
 /*
 
@@ -70,6 +87,3 @@ return the action creator selectAccount - HINT: see the UserList
 component.
 
 */
-
-
-export default connect(mapStateToProps)(UserDetail);

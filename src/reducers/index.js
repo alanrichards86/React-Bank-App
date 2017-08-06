@@ -23,11 +23,6 @@ const reducer = function(state = initialState, action) {
             selectedAccount: {$set: action.payload}
           });
 
-        /*
-
-          You will need to create a reducer case for ACCOUNT_SELECTED here - HINT: it should mimic closely the USER_SELECTED case.
-
-        */
         case WITHDRAW_FUNDS:
             const userIdx = state.users.findIndex(user => user._id === state.selectedUser);
             const accountIdx = state.users[userIdx].accounts.findIndex(account => account.id === state.selectedAccount);
@@ -53,3 +48,11 @@ const reducer = function(state = initialState, action) {
 }
 
 export default reducer;
+
+
+
+/*
+
+  You will need to create a reducer case for ACCOUNT_SELECTED here - HINT: it should mimic closely the USER_SELECTED case.
+
+*/
